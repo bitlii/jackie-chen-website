@@ -4,7 +4,8 @@ import {Container, Card, CardContent, CardActions, Chip} from "@material-ui/core
 
 export default function Projects() {
     return (
-        <Container>
+        <Container className="section">
+            <h1> Projects </h1>
             <Card className="card">
                 <CardContent>
                     <h2>Refood</h2>
