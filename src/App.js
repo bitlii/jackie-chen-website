@@ -1,11 +1,14 @@
 import './App.scss';
 import Landing from "./components/landing";
+import Projects from "./components/projects";
+import {Container} from "@material-ui/core";
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App" maxWidth="sm">
       <Landing/>
-    </div>
+      <Projects/>
+    </Container>
   );
 }
 
