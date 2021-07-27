@@ -1,4 +1,4 @@
-import {Container} from "@material-ui/core";
+import {Container} from "semantic-ui-react";
 
 export default function About() {
     return(

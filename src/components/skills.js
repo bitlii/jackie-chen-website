@@ -1,6 +1,6 @@
 import React from 'react';
 import "./skills.scss";
-import {Chip, Container, Divider} from "@material-ui/core";
+import {Container, Label} from "semantic-ui-react";
 
 export default function Skills() {
     let data = {
@@ -11,7 +11,7 @@ export default function Skills() {
 
     function displayCategory(skills) {
         return skills.map((skill) => {
-            return <Chip className="skill" label={skill} color="primary"/>
+            return <Label className="skill" color="blue">{skill}</Label>
         });
     }
 
