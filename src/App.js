@@ -4,13 +4,17 @@ import Landing from "./components/landing";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import About from "./components/about";
+import Education from "./components/education";
+import Header from "./components/header";
 import {Container} from "semantic-ui-react";
 
 function App() {
   return (
     <Container className="app" maxWidth="md">
+        <Header/>
         <Landing/>
         <About/>
+        <Education/>
         <Skills/>
         <Projects/>
     </Container>

@@ -1,16 +1,18 @@
-$font-stack: 'Raleway', sans-serif;
+@use 'components/base';
 
-body {
-  background-color: #8BC6EC;
-  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+#root {
+  background: base.$dark-shade;
+  color: base.$light-shade;
 }
 
 .app {
-  font-family: $font-stack;
+  font-family: base.$font-stack;
+  padding-bottom: 10em;
 }
 
 .section {
   margin-bottom: 10em;
+  padding-top: 10em;
 }
 
 h1, h2, h3, p {

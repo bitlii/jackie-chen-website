@@ -6,30 +6,30 @@ export default function Skills() {
     let data = {
         languages: ["Python", "Java", "JavaScript", "R", "SQL", "HTML/CSS (+ SASS)"],
         frameworks: ["Spring", "React", "Vue.js", "Node.js", "Express"],
-        tools: ["Git"],
+        tools: ["Git", "Jira", "Windows", "Linux"],
     }
 
     function displayCategory(skills) {
         return skills.map((skill) => {
-            return <Label className="skill" color="blue">{skill}</Label>
+            return <Label color="blue">{skill}</Label>
         });
     }
 
     return (
-      <Container className="section">
+      <Container id="skills" className="section">
           <h1> Skills </h1>
           <h3> Languages </h3>
-          <div className="category">
+          <Label.Group className="category">
               {displayCategory(data.languages)}
-          </div>
+          </Label.Group>
           <h3> Frameworks </h3>
-          <div className="category">
+          <Label.Group className="category">
               {displayCategory(data.frameworks)}
-          </div>
+          </Label.Group>
           <h3> Tools </h3>
-          <div className="category">
+          <Label.Group className="category">
               {displayCategory(data.tools)}
-          </div>
+          </Label.Group>
       </Container>
     );
 }

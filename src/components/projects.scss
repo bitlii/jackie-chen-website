@@ -1,3 +1,14 @@
-.card {
-  max-width: 300px;
+@use 'base';
+
+$card-font-colour: #1F2433;
+
+.project-list {
+  display: flex;
+}
+
+.project-card {
+  margin: 0;
+
+  background-color: base.$light-shade;
+  color: $card-font-colour;
 }

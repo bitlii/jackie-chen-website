@@ -1,0 +1,17 @@
+@use "base";
+
+.ui.menu {
+  background-color: base.$dark-shade;
+  //box-shadow: none;
+  //border: none;
+  justify-content: center;
+
+  a.item {
+    color: base.$light-shade;
+    font-weight: 800;
+  }
+
+  a.item:hover {
+    color: base.$primary-colour;
+  }
+}
