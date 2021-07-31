@@ -11,7 +11,7 @@ export default function Skills() {
 
     function displayCategory(skills) {
         return skills.map((skill) => {
-            return <Label color="blue">{skill}</Label>
+            return <Label>{skill}</Label>
         });
     }
 

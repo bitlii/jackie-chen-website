@@ -7,3 +7,8 @@ $primary-colour: #7E99AF;
 
 $dark-accent: #A0506F;
 $dark-shade: #283752;
+
+.ui.label {
+  background-color: $dark-accent;
+  color: $light-shade;
+}
