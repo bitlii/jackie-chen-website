@@ -12,3 +12,20 @@ $dark-shade: #283752;
   background-color: $dark-accent;
   color: $light-shade;
 }
+
+.section {
+  margin-bottom: 10em;
+  padding-top: 10em;
+}
+
+a {
+  color: inherit;
+
+  :hover {
+    color: $primary-colour;
+  }
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}

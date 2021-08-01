@@ -6,7 +6,7 @@ export default function Skills() {
     let data = {
         languages: ["Python", "Java", "JavaScript", "R", "SQL", "HTML/CSS (+ SASS)"],
         frameworks: ["Spring", "React", "Vue.js", "Node.js", "Express"],
-        tools: ["Git", "Jira", "Windows", "Linux"],
+        tools: ["Git", "Jira", "Windows", "Linux", "Android Studio"],
     }
 
     function displayCategory(skills) {
@@ -17,7 +17,7 @@ export default function Skills() {
 
     return (
       <Container id="skills" className="section">
-          <h1> Skills </h1>
+          <h1 > Skills </h1>
           <h3> Languages </h3>
           <Label.Group className="category">
               {displayCategory(data.languages)}

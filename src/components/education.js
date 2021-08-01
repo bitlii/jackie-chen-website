@@ -1,21 +1,15 @@
-import {Container, Card, Icon} from "semantic-ui-react";
+import "./_base.scss";
+import {Container, Card, Icon, Divider} from "semantic-ui-react";
 
 export default function Education() {
     const educationCardStyle = {
         maxWidth: "500px",
     }
-    // todo: extract this css into scss file.
-    const header = {
-        display: "flex",
-        justifyContent: "center",
-    }
 
     return (
       <Container id="education" className="section">
-          <div style={header}>
-              <Icon className="graduation cap" style={{margin: "auto 4px auto 0"}} size="large"/>
-              <h2 style={{margin: "auto 0"}}>Education</h2>
-          </div>
+          <h1>Education</h1>
+
           <Card
               style={educationCardStyle}
               centered
@@ -23,7 +17,7 @@ export default function Education() {
               fluid>
               <Card.Content>
                   <Card.Header textAlign="left">
-                      University of Canterbury
+                      <Icon className="graduation cap"/> University of Canterbury
                   </Card.Header>
                   <Card.Meta>
                       2019 - 2021
@@ -33,6 +27,12 @@ export default function Education() {
                   </Card.Meta>
                   <Card.Description>
                       Bachelor of Science: Computer Science and Data Science
+                  </Card.Description>
+              </Card.Content>
+              <Card.Content>
+                  <Card.Description>
+                      Notable courses include:
+                      Algorithms, Artificial Intelligence, Big Data Computing, Data Wrangling, Web Computing Architectures, Software Engineering.
                   </Card.Description>
               </Card.Content>
               <Card.Content extra>

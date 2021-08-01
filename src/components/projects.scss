@@ -10,3 +10,8 @@ $card-font-colour: #1F2433;
   background-color: base.$light-shade;
   color: $card-font-colour;
 }
+
+.ui.image.project-card-image {
+  max-height: 200px;
+  object-fit: cover;
+}

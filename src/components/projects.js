@@ -1,18 +1,20 @@
 import React from "react";
 import "./projects.scss";
-import {Container, Card, Label, CardGroup, LabelGroup, Icon, CardContent} from "semantic-ui-react";
+import {Container, Card, Label, CardGroup, LabelGroup, Icon, CardContent, Image} from "semantic-ui-react";
 
 export default function Projects() {
 
     let data = [
         {
             title: "Refood",
+            image: "/images/refood.png",
             meta: "",
             description: "A SENG302 Project.",
             labels: ["Java", "Spring", "JavaScript", "HTML/CSS", "Vue.js", "SQL"],
         },
         {
             title: "Dodgeball!",
+            image: "",
             meta: "The most fun you can have sitting in front of a UC Funkit (microcontroller kit).",
             description: "A player vs player game where one player must knock the other player out by hitting them with a dodgeball, and the other play must survive as long as possible.",
             labels: ["C"],
@@ -24,6 +26,7 @@ export default function Projects() {
         return data.map((project) => {
            return (
                <Card className="project-card" raised>
+                   <Image className="project-card-image" src={project.image}/>
                    <Card.Content>
                        <Card.Header>{project.title}</Card.Header>
                        <Card.Meta>{project.meta}</Card.Meta>
