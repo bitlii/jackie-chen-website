@@ -29,7 +29,7 @@ export default function Landing() {
     }
 
 
-    const scrollToNextSection = () => bottomSection.scrollIntoView({behavior: "smooth", alignToTop: false});
+    const scrollToNextSection = () => bottomSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest", alignToTop: false});
 
     const copyEmailToClipboard = () => navigator.clipboard.writeText("itsjackiechen@gmail.com");
 
@@ -63,6 +63,7 @@ export default function Landing() {
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{ease: "easeOut", duration: 2, delay: 5}}>
+                    <h5>You can reach me through these places:</h5>
                     <Popup
                         on="click"
                         size="mini"

@@ -5,8 +5,9 @@ import {Container, Label} from "semantic-ui-react";
 export default function Skills() {
     let data = {
         languages: ["Python", "Java", "JavaScript", "R", "SQL", "HTML/CSS (+ SASS)"],
-        frameworks: ["Spring", "React", "Vue.js", "Node.js", "Express"],
+        frameworks: ["Spring", "React", "Vue.js", "Node.js", "Express", "Jest"],
         tools: ["Git", "Jira", "Windows", "Linux", "Android Studio"],
+        // todo: processes
     }
 
     function displayCategory(skills) {
