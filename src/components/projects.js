@@ -11,6 +11,7 @@ export default function Projects() {
             meta: "",
             description: "A SENG302 Project.",
             labels: ["Java", "Spring", "JavaScript", "HTML/CSS", "Vue.js", "SQL"],
+            //todo github:
         },
         {
             title: "Dodgeball!",
@@ -18,6 +19,13 @@ export default function Projects() {
             meta: "The most fun you can have sitting in front of a UC Funkit (microcontroller kit).",
             description: "A player vs player game where one player must knock the other player out by hitting them with a dodgeball, and the other play must survive as long as possible.",
             labels: ["C"],
+        },
+        {
+            title: "Recurrent",
+            image: "",
+            meta: "",
+            description: "",
+            labels: ["Java", "Android"]
         }
     ];
 

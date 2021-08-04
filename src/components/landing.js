@@ -64,17 +64,30 @@ export default function Landing() {
                     animate={{opacity: 1}}
                     transition={{ease: "easeOut", duration: 2, delay: 5}}>
                     <h5>You can reach me through these places:</h5>
-                    <Popup
-                        on="click"
-                        size="mini"
-                        position="bottom center"
-                        trigger={<Icon className="mail" size="large" link onClick={() => copyEmailToClipboard()}/>}
-                        content={"Email has been copied to your clipboard"}
-                        hideOnScroll>
-                    </Popup>
-                    <a href="https://github.com/bitlii">
-                        <Icon className="github" size="large" link/>
-                    </a>
+                    <div id="icon-links">
+                        <Popup
+                            on="click"
+                            size="mini"
+                            position="bottom center"
+                            trigger={<motion.div whileHover={{scale: 1.2}} whileTap={{scale: 0.9}}><Icon className="mail" size="large" link onClick={() => copyEmailToClipboard()}/></motion.div>}
+                            content={"Email has been copied to your clipboard"}
+                            hideOnScroll>
+                        </Popup>
+                        <motion.div
+                            whileHover={{scale: 1.2}}
+                            whileTap={{scale: 0.9}}>
+                            <a href="https://github.com/bitlii">
+                                <Icon className="github" size="large" link/>
+                            </a>
+                        </motion.div>
+                        <motion.div
+                            whileHover={{scale: 1.2}}
+                            whileTap={{scale: 0.9}}>
+                            <a href="https://www.linkedin.com/in/jackie-chen-569210219/">
+                                <Icon className="linkedin" size="large" link/>
+                            </a>
+                        </motion.div>
+                    </div>
                 </motion.div>
             </motion.div>
 
