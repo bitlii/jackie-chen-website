@@ -1,5 +1,5 @@
 import "./_base.scss";
-import {Container, Card, Icon, Divider} from "semantic-ui-react";
+import {Container, Card, Icon} from "semantic-ui-react";
 
 export default function Education() {
     const educationCardStyle = {
