@@ -8,10 +8,10 @@ export default function Projects() {
         {
             title: "Refood",
             image: "/images/refood.png",
-            meta: "",
-            description: "A SENG302 Project.",
+            meta: "SENG302 University Project",
+            description: "Developed in a team of 8, Refood is a website that helps reduce food (and other) waste by connecting people with businesses to help sell left over goods.",
             labels: ["Java", "Spring", "JavaScript", "HTML/CSS", "Vue.js", "SQL"],
-            //todo github:
+            github: "",
         },
         {
             title: "Dodgeball!",
@@ -19,13 +19,23 @@ export default function Projects() {
             meta: "The most fun you can have sitting in front of a UC Funkit (microcontroller kit).",
             description: "A player vs player game where one player must knock the other player out by hitting them with a dodgeball, and the other play must survive as long as possible.",
             labels: ["C"],
+            github: "https://github.com/bitlii/ENCE260-Assignment",
         },
         {
             title: "Recurrent",
-            image: "",
+            image: "/images/recurrent.png",
             meta: "",
-            description: "",
-            labels: ["Java", "Android"]
+            description: "A simple android app that helps track your recurring expenses and income streams.",
+            labels: ["Java", "Android"],
+            github: "https://github.com/bitlii/recurrent"
+        },
+        {
+            title: "Streetwhere",
+            image: "/images/streetwhere.png",
+            meta: "",
+            description: "My currently active side project - A WIP website to help find connect with clothing stores worldwide.",
+            labels: ["HTML/CSS", "React", "JavaScript", "PostgreSQL"],
+            link: "https://www.streetwhere.net/",
         }
     ];
 
@@ -34,14 +44,27 @@ export default function Projects() {
         return data.map((project) => {
            return (
                <Card className="project-card" raised>
-                   <Image className="project-card-image" src={project.image}/>
+                   {
+                       project.image !== ""
+                           ? <Image className="project-card-image" src={project.image} alt="Image of the project"/>
+                           : null
+                   }
                    <Card.Content>
                        <Card.Header>{project.title}</Card.Header>
                        <Card.Meta>{project.meta}</Card.Meta>
                        <Card.Description>{project.description}</Card.Description>
                    </Card.Content>
                    <Card.Content extra>
-                       <Icon className="github right floated" size="big" link/>
+                       {
+                           project.link !== ""
+                                ? <a href={project.github}><Icon className="github right floated" size="big" link /></a>
+                                : null
+                       }
+                       {
+                           project.link !== ""
+                               ? <a href={project.link}><Icon className="linkify right floated" size="big" link /></a>
+                               : null
+                       }
                        <Label.Group as="span">
                            {
                                project.labels.map((label) => {
@@ -54,7 +77,6 @@ export default function Projects() {
            );
         });
     }
-
 
     return (
         <Container id="projects" className="project-section section">
