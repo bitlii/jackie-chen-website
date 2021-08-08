@@ -14,4 +14,10 @@ $card-font-colour: #1F2433;
 .ui.image.project-card-image {
   max-height: 200px;
   object-fit: cover;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
 }
+
+
