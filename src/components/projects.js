@@ -12,6 +12,7 @@ export default function Projects() {
             description: "Developed in a team of 8, Refood is a website that helps reduce food (and other) waste by connecting people with businesses to help sell left over goods.",
             labels: ["Java", "Spring", "JavaScript", "HTML/CSS", "Vue.js", "SQL"],
             github: "",
+            link: "",
         },
         {
             title: "Dodgeball!",
@@ -27,7 +28,8 @@ export default function Projects() {
             meta: "",
             description: "A simple android app that helps track your recurring expenses and income streams.",
             labels: ["Java", "Android"],
-            github: "https://github.com/bitlii/recurrent"
+            github: "https://github.com/bitlii/recurrent",
+            link: "",
         },
         {
             title: "Streetwhere",
@@ -56,7 +58,7 @@ export default function Projects() {
                    </Card.Content>
                    <Card.Content extra>
                        {
-                           project.link !== ""
+                           project.github !== ""
                                 ? <a href={project.github}><Icon className="github right floated" size="big" link /></a>
                                 : null
                        }
