@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.scss";
-import {Container, Card, Label, CardGroup, LabelGroup, Icon, CardContent, Image} from "semantic-ui-react";
+import {Container, Card, Label, CardGroup, Icon, Image} from "semantic-ui-react";
 
 export default function Projects() {
 
@@ -20,7 +20,7 @@ export default function Projects() {
             meta: "The most fun you can have sitting in front of a UC Funkit (microcontroller kit).",
             description: "A player vs player game where one player must knock the other player out by hitting them with a dodgeball, and the other play must survive as long as possible.",
             labels: ["C"],
-            github: "https://github.com/bitlii/ENCE260-Assignment",
+            github: "https://github.com/nzjchen/ENCE260-Assignment",
         },
         {
             title: "Recurrent",
@@ -28,7 +28,7 @@ export default function Projects() {
             meta: "",
             description: "A simple android app that helps track your recurring expenses and income streams.",
             labels: ["Java", "Android"],
-            github: "https://github.com/bitlii/recurrent",
+            github: "https://github.com/nzjchen/recurrent",
             link: "",
         },
         {

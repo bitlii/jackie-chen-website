@@ -76,7 +76,7 @@ export default function Landing() {
                         <motion.div
                             whileHover={{scale: 1.2}}
                             whileTap={{scale: 0.9}}>
-                            <a href="https://github.com/bitlii">
+                            <a href="https://github.com/nzjchen">
                                 <Icon className="github" size="large" link/>
                             </a>
                         </motion.div>

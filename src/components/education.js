@@ -23,7 +23,7 @@ export default function Education() {
                       2019 - 2021
                   </Card.Meta>
                   <Card.Meta>
-                      7.11 GPA
+                      7.25 GPA
                   </Card.Meta>
                   <Card.Description>
                       Bachelor of Science: Computer Science and Data Science
