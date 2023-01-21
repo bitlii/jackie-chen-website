@@ -4,9 +4,9 @@ import {Container, Label} from "semantic-ui-react";
 
 export default function Skills() {
     let data = {
-        languages: ["Python", "Java", "JavaScript", "R", "SQL", "HTML/CSS (+ SASS)", "C#"],
-        frameworks: ["Spring", "React", "Vue.js", "Node.js", "Express", "Jest", ".NET"],
-        tools: ["Git", "Jira", "Windows", "Linux", "Android Studio", "MSQLS"],
+        languages: ["TypeScript/JavaScript", "C#", "HTML/CSS", "Python", "Java", "SQL (T-SQL, PostgreSQL)"],
+        frameworks: ["React", ".NET", "Node.js", "Express", "Jest" ],
+        tools: ["Git", "Azure", "Windows", "Linux"],
         // todo: processes
     }
 

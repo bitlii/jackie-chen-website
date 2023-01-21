@@ -14,9 +14,12 @@ export default function Experience() {
       timeSpent: "Nov 2021 - Present",
       keyPoints: [
         "Developed new and optimized existing solutions and systems to handle extremely large databases (millions of rows)",
-        "Built an internal security tool to help identify servers with vulnerabilities"
+        "Built a React application to facilitate the efficient transferring and exporting of database tables containing upwards of hundreds of millions of rows in any given export run. ",
+        "Optimized existing solutions and systems to handle large databases read and writes (millions of rows), while maintaining security and confidentiality of the data.",
+        "Extended existing applications to include new features and tools for the 2023 census.",
+        "Mentored a graduate software developer through onboarding and our dozens of complex applications and systems."
       ],
-      tech: ["C#", ".NET", "Azure", "JavaScript", "React", "Microsoft SQL Server", "Kanban"]
+      tech: ["C#", ".NET", "Azure", "TypeScript", "React", "SQL Server", "Kanban"]
     }
   ]
 
